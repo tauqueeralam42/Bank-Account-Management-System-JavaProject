@@ -15,6 +15,12 @@ class BankDetails {
         balance = sc.nextInt();
     }
     
+    public void showAccount() {
+        System.out.println("Name of account holder: " + userName);
+        System.out.println("Account no.: " + accountNumber);
+        System.out.println("Balance: " + balance);
+    }
+    
 }
     
     
