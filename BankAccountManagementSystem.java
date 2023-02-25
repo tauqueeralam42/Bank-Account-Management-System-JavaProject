@@ -21,6 +21,25 @@ class BankDetails {
         System.out.println("Balance: " + balance);
     }
     
+    public void deposit() {
+        int amt;
+        System.out.println("Enter the amount you want to deposit: ");
+        amt = sc.nextInt();
+        balance = balance + amt;
+    }
+    
+    public void withdrawal() {
+        int amt;
+        System.out.println("Enter the amount you want to withdraw: ");
+        amt = sc.nextInt();
+        if (balance >= amt) {
+            balance = balance - amt;
+            System.out.println("Balance after withdrawal: " + balance);
+        } else {
+            System.out.println("Your balance is less than " + amt + "\tTransaction failed...!!");
+        }
+    }
+    
 }
     
     
